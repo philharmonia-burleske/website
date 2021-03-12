@@ -1,7 +1,7 @@
 on:
   push:
-    # branches: [ master ]
-    branches: [ 'feature/**' ]
+    branches: [ master ]
+    # branches: [ 'feature/**' ]
 name: Deploy website on push
 jobs:
   web-deploy:
@@ -18,4 +18,4 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./public_html/
         server-dir: ./public_html/
-        dry-run: true
+        # dry-run: true

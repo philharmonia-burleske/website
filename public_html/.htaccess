@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} (DoCoMo|Vodafone|J-PHONE|SoftBank|UP\.Browser|KDDI)
+RewriteCond %{REQUEST_URI} !^/m/
+RewriteRule ^(.*)\.html$ /m/$1.html [L]
+
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html

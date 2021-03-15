@@ -17,4 +17,4 @@ Web サイトの更新をしたい人が本リポジトリの `master` ブラン
 - Web サイトの更新方法の使い分け
     - Web サイトの更新には原則、本リポジトリを利用ください。
     - [過去の演奏会のアーカイブ](http://orchestra.musicinfo.co.jp/~burleske/archive.html) は例外です。アーカイブの音声ファイル (mp3, wav など) はファイルサイズが大きいため、本リポジトリの管理対象外としています。アーカイブを更新したい場合は Web サーバーに直接 FTP で配置する必要があります。
-    - Web サーバーの FTP 接続情報 (ホスト名、ユーザー、パスワード) は GitHub Secrets で暗号化して管理しており、そちらの Secrets を GitHub Actions ワークフローで参照するようにしています。FTP 接続情報は関係者に別途連絡します。
+    - Web サーバーの FTP 接続情報 (ホスト名、ユーザー、パスワード) は [GitHub Secrets](https://github.com/philharmonia-burleske/website/settings/secrets/actions) で暗号化して管理しており、そちらの Secrets を GitHub Actions ワークフローで参照するようにしています。FTP 接続情報は関係者に別途連絡します。

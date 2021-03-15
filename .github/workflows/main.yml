@@ -16,4 +16,9 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         localDir: "public_html"
         remoteDir: "public_html"
+        # options の説明
+        # --exclude archive/: FTP のソース、ターゲットともに archive/ ディレクトリは対象外とする
+        # --delete: FTP のソースに存在しないファイルをターゲットから削除する
+        # --ignore-time: FTP での差分反映時にファイルの変更日時は無視する (ファイルサイズで差分有無を判定することになる)
+        # --verbose=3: 詳細なログを出力する
         options: "--exclude archive/ --delete --ignore-time --verbose=3"

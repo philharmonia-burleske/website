@@ -121,6 +121,7 @@ span, #container-name span,#container-slogan span {
 	padding: 20px 40px 20px 40px;
 	margin: 0 0 0 0;
 	height: auto;
+	min-height: 500px;
 }
 
 #content {
